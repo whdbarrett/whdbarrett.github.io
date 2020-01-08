@@ -124,8 +124,7 @@
 </li>
 </ul>
 <h5 id="6-在nginx的配置文件中添加配置，内容为"><a href="#6-在nginx的配置文件中添加配置，内容为" class="headerlink" title="6.在nginx的配置文件中添加配置，内容为"></a>6.在nginx的配置文件中添加配置，内容为</h5><pre><code>upstream tomcat_server{
-    #根据IP地址分配，实现session共享，weight设置权重
-    #ip_hash;
+    #ip_hash，根据IP地址分配，实现session共享，weight设置权重
     server localhost:8180 weight=2;
     server localhost:8280 weight=2;
     server localhost:8380 weight=1;
@@ -134,7 +133,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/07/tomcat8-redis-nginx/" data-id="ck55cut4l0001bku0hv35g53g" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/07/tomcat8-redis-nginx/" data-id="ck55d0yiu0001k8u04eb37g7y" class="article-share-link">Share</a>
       
       
     </footer>
@@ -183,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/05/hello-world/" data-id="ck55cut4d0000bku028ip3vt0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/05/hello-world/" data-id="ck55d0yin0000k8u0adgg0vnv" class="article-share-link">Share</a>
       
       
     </footer>
